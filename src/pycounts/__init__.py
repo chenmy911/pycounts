@@ -1,3 +1,6 @@
 # read version from installed package
 from importlib.metadata import version
-__version__ = version("pycounts")
+
+# updateed by chenmy
+__version__ = version("pycounts_go2026")
+#__version__ = version("pycounts")

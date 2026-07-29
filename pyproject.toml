@@ -1,10 +1,15 @@
 [tool.poetry]
-name = "pycounts"
-version = "0.1.0"
+name = "pycounts_go2026"
+#name = "pycounts"
+version = "0.2.0"
 description = "Calculate word counts in a text file"
 authors = ["Morty Chen"]
 license = "MIT"
 readme = "README.md"
+
+packages = [
+    {from = "src", include = "pycounts"}  # 保持 src/pycounts 不变
+]
 
 [tool.poetry.dependencies]
 python = ">=3.12"
