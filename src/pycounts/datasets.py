@@ -15,7 +15,8 @@ def get_flatland():
     """
     warnings.warn("This funciton will be deprecated in v1.0.0",
                   FutureWarning)
-    
+
+    print("add")
     with resources.path("pycounts.data", "flatland.txt") as f:
         data_file_path = f
     return data_file_path
