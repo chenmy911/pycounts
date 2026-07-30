@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "pycounts_go2026"
 #name = "pycounts"
-version = "0.3.0"
+version = "0.8.0"
 description = "Calculate word counts in a text file"
 authors = ["Morty Chen"]
 license = "MIT"
