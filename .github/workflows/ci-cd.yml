@@ -68,10 +68,10 @@ jobs:
         virtualenvs-in-project: true
 
     # 3. 设置 Python 并启用 Poetry 依赖缓存
-    - name: Set up python 3.9
+    - name: Set up python 3.12
       uses: actions/setup-python@v5
       with:
-        python-version: '3.9'
+        python-version: '3.12'
         cache: 'poetry'
 
     - name: Install package
@@ -90,7 +90,7 @@ jobs:
       with:
         user: __token__
         password: ${{ secrets.TEST_PYPI_API_TOKEN }}
-        repository_url: https://test.pypi.org/legacy/
+        repository-url: https://test.pypi.org/legacy/
 
     - name: Test install from TestPypi
       run: |
