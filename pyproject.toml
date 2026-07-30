@@ -32,5 +32,7 @@ dev = [
 ]
 
 [tool.semantic_release]
-version_variable = "pyproject.toml:version"
+version_variable = "pyproject.toml:project.version"
+allow_zero_version = true
+major_on_zero = false
 
