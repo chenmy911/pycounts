@@ -38,18 +38,18 @@ dev = [
 version_toml = ["pyproject.toml:tool.poetry.version"]
 allow_zero_version = true
 major_on_zero = false
-# 2. 分支配置（新版本支持 branches 列表，也可保留 branch）
-[tool.semantic_release.branches.main]
-match = "(main|master)"
-prerelease = false
-# branches = ["main"]
-
-
 # 3. 构建与发布命令
 build_command = "poetry build"
 upload_to_release = true
 upload_to_pypi = false
 remove_dist = false
+
+
+# 2. 分支配置（新版本支持 branches 列表，也可保留 branch）
+[tool.semantic_release.branches.main]
+match = "(main|master)"
+prerelease = false
+# branches = ["main"]
 
 # patch_without_tag is not used anymore
 
