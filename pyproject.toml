@@ -52,5 +52,9 @@ remove_dist = false
 # patch_without_tag is not used anymore
 
 # 4. 日志配置（新版写法）
-[tool.semantic_release.changelog]
+#[tool.semantic_release.changelog]
+#changelog_file = "CHANGELOG.md"
+
+# 3. Changelog 配置（匹配 PSR v10 规范）
+[tool.semantic_release.changelog.default_templates]
 changelog_file = "CHANGELOG.md"
